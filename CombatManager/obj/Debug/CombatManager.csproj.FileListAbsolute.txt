@@ -1,0 +1,9 @@
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\bin\Debug\CombatManager.exe.config
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\bin\Debug\CombatManager.exe
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\bin\Debug\CombatManager.pdb
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\obj\Debug\CombatManager.csprojAssemblyReference.cache
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\obj\Debug\CombatManager.csproj.CoreCompileInputs.cache
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\obj\Debug\CombatManager.exe
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\obj\Debug\CombatManager.pdb
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\bin\Debug\Database1.mdf
+C:\Users\Grzegorz Żukowski\source\repos\CombatManager\CombatManager\bin\Debug\Database1_log.ldf
