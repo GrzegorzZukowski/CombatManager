@@ -28,7 +28,7 @@ namespace CombatManager
         public int US1 { get => US; set => US = value; }
         public int WeaponStrength1 { get => WeaponStrength; set => WeaponStrength = value; }
 
-        public Creature(string Name, int WW, int US, int Wt, int St, int Zyw, int Dex, RollingDie Hit, RollingDie Damage, int WeaponStrength)
+        public Creature(string Name, int WW, int US, int Wt, int St, int Zyw, int Dex, RollingDie Hit, RollingDie Damage)
         {
             this.Name = Name;
             WW1 = WW;
@@ -84,11 +84,21 @@ namespace CombatManager
         {
             if (WW1 >= Hit.Roll())
             {
-                int Injury = St1 + Damage1.Roll();
-                return Injury;
+                int x = Damage.Roll();
+                int sum = 0;
+                while (Damage.Roll() == 10)
+                {
+                    sum += 10;
+                }
+                return sum +St1+ x;
+
             }
             else
-                return 0;
+            {
+                Console.WriteLine("Smok chybia: ");
+                return -100;
+            }
+               
         }
 
         //public void RangedAttack()
@@ -143,6 +153,9 @@ namespace CombatManager
             }
         }
 
-        
+        public void PowerfulBlow()
+        {
+
+        }
     }
 }
