@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CombatManager.Decorator.Inventory.Armour;
+using CombatManager.Decorator.Inventory.MeleeWeapon;
+using CombatManager.Decorator.Skills;
 
 namespace CombatManager
 {
@@ -77,15 +80,16 @@ namespace CombatManager
             //}
             #endregion
             #region Decorator test
-            ICreature smok = new Creature("smok", 95, 39, 10, 10, 50, 69, Hit, Damage, 1);
-            CreatureInventoryDecorator creatureInventoryDecorator = new Armour(smok);
-            CreatureInventoryDecorator creature = new MeleeWeapon(creatureInventoryDecorator);
-            for (int i = 0; i < 100; i++)
+            ICreature smok = new Creature("smok", 95, 39, 0, 0, 50, 69, Hit, Damage);
+            CreatureDecorator armoured = new Kolcza(smok);
+            CreatureDecorator creatureWeapon = new TwoHanded(armoured);
+            CreatureDecorator creaturePowerful = new PowerfulBlow(creatureWeapon);
+            for (int i = 0; i < 1000; i++)
             {
-                Console.WriteLine("Smok zadaje: " + creature.CrushingBlow(Damage) + " obrażeń");
-                creature.TakeDamage(14);
-                Console.WriteLine(creature.PrintZyw());
-                
+                Console.WriteLine("Smok zadaje: " + creaturePowerful.Attack() + " obrażeń");
+                creaturePowerful.TakeDamage(3);
+                //Console.WriteLine(creaturePowerful.PrintZyw());
+
             }
             #endregion
         }

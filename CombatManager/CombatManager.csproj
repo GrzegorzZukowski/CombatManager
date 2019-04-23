@@ -57,13 +57,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Battle.cs" />
+    <Compile Include="Decorator\Inventory\Armour\Cwiekowana.cs" />
+    <Compile Include="Decorator\Inventory\Armour\Kolcza.cs" />
+    <Compile Include="Decorator\Inventory\Armour\Luskowa.cs" />
+    <Compile Include="Decorator\Inventory\Armour\Plyta.cs" />
+    <Compile Include="Decorator\Inventory\MeleeWeapon\Dagger.cs" />
+    <Compile Include="Decorator\Inventory\MeleeWeapon\OneHanded.cs" />
+    <Compile Include="Decorator\Inventory\MeleeWeapon\Rapier.cs" />
+    <Compile Include="Decorator\Inventory\MeleeWeapon\TwoHanded.cs" />
+    <Compile Include="Decorator\Inventory\RangedWeapon\Bow.cs" />
+    <Compile Include="Decorator\Inventory\RangedWeapon\CrossBow.cs" />
+    <Compile Include="Decorator\Inventory\RangedWeapon\ElfBow.cs" />
+    <Compile Include="Decorator\Inventory\RangedWeapon\Pistol.cs" />
+    <Compile Include="Decorator\Inventory\RangedWeapon\Rifle.cs" />
+    <Compile Include="Decorator\Skills\CrushingBlow.cs" />
+    <Compile Include="Decorator\Skills\DodgeBlow.cs" />
+    <Compile Include="Decorator\Skills\Parry.cs" />
+    <Compile Include="Decorator\Skills\PowerfulBlow.cs" />
     <Compile Include="ICreature.cs" />
-    <Compile Include="Inventory\Armour.cs" />
-    <Compile Include="Inventory\CreatureInventoryDecorator.cs" />
-    <Compile Include="Inventory\MeleeWeapon.cs" />
-    <Compile Include="Inventory\RangedWeapon.cs" />
-    <Compile Include="Skills\Skills.cs" />
+    <Compile Include="Decorator\Inventory\Armour\Skorznia.cs" />
+    <Compile Include="Decorator\CreatureDecorator.cs" />
+    <Compile Include="Decorator\Inventory\MeleeWeapon.cs" />
+    <Compile Include="Decorator\Inventory\RangedWeapon.cs" />
+    <Compile Include="Decorator\Skills\Skills.cs" />
     <Compile Include="Creature.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,5 +100,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
