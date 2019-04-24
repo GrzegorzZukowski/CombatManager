@@ -68,18 +68,6 @@ namespace CombatManager
             return (s+ ActZyw);
         }
 
-        //public void Attack()
-        //{
-        //    int HitRoll = Hit.Roll();
-        //    if (WW1>= HitRoll)
-        //    {
-        //        int Injury = St1 + Damage1.Roll();
-        //        Console.WriteLine(Name + " zadaje obrazeń za " + Injury);
-        //    }
-        //    else
-        //        Console.WriteLine(Name + " pudłuje");
-        //}
-
         public int Attack()
         {
             if (WW1 >= Hit.Roll())
@@ -100,18 +88,6 @@ namespace CombatManager
             }
                
         }
-
-        //public void RangedAttack()
-        //{
-        //    int HitRoll = Hit.Roll();
-        //    if (US1 >= HitRoll)
-        //    {
-        //        int Injury = St1 + Damage1.Roll();
-        //        Console.WriteLine(Name + " zadaje obrazeń za " + Injury);
-        //    }
-        //    else
-        //        Console.WriteLine(Name + " pudłuje");
-        //}
 
         public int RangedAttack()
         {
@@ -156,6 +132,22 @@ namespace CombatManager
         public void PowerfulBlow()
         {
 
+        }
+
+        public bool Parry()
+        {
+            int roll = Hit.Roll();
+            if (WW1 >= roll)
+            {
+                TakeDamage(0);
+                Console.WriteLine(Name + " sparował");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine(Name + " nie sparował ");
+                return false;
+            }
         }
     }
 }

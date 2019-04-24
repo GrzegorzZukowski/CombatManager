@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CombatManager.Decorator.Skills
+namespace CombatManager.Decorator.Inventory.MeleeWeapon
 {
-    class Parry : CreatureDecorator
+    class Shield : CreatureDecorator
     {
-        public Parry(ICreature aCreature) : base(aCreature)
+        public Shield(ICreature aCreature) : base(aCreature)
         {
 
         }

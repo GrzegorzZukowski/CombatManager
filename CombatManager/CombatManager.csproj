@@ -61,6 +61,7 @@
     <Compile Include="Decorator\Inventory\Armour\Kolcza.cs" />
     <Compile Include="Decorator\Inventory\Armour\Luskowa.cs" />
     <Compile Include="Decorator\Inventory\Armour\Plyta.cs" />
+    <Compile Include="Decorator\Inventory\MeleeWeapon\Shield.cs" />
     <Compile Include="Decorator\Inventory\MeleeWeapon\Dagger.cs" />
     <Compile Include="Decorator\Inventory\MeleeWeapon\OneHanded.cs" />
     <Compile Include="Decorator\Inventory\MeleeWeapon\Rapier.cs" />

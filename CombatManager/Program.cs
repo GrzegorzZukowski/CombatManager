@@ -15,7 +15,6 @@ namespace CombatManager
         static void Main(string[] args)
         {
             #region 
-            Skills skills = new Skills();
             RollingDie Hit = new RollingDie(100);
             RollingDie Damage = new RollingDie(10);
             #endregion

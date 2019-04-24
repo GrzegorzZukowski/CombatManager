@@ -16,7 +16,7 @@ namespace CombatManager.Decorator.Inventory.MeleeWeapon
 
         public override int Attack()
         {
-            return base.Attack() +2;
+            return base.Attack() +1;
         }
     }
 }

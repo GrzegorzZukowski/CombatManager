@@ -68,8 +68,6 @@ namespace CombatManager
                 Console.WriteLine("smok nie sparował ");
                 return false;
             }
-
         }
-
     }
 }
