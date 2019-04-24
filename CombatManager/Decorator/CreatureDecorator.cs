@@ -54,5 +54,9 @@ namespace CombatManager.Inventory
         {
             this._creature.PowerfulBlow();
         }
+        public virtual bool Parry()
+        {
+           return this._creature.Parry();
+        }
     }
 }

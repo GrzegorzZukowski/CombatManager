@@ -16,6 +16,7 @@ namespace CombatManager
         void TakeDamage(int damageTaken);
         int CrushingBlow(RollingDie die);
         void PowerfulBlow();
+        bool Parry();
 
     }
 }
